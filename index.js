@@ -4,11 +4,8 @@ var packageName = 'gulp-source-map-unzip';
 
 var through = require('through2'),
     gutil = require('gulp-util'),
-    extend = require('xtend'),
     BufferStreams = require('bufferstreams'),
-    applySourceMap = require('vinyl-sourcemaps-apply'),
     transfer = require('multi-stage-sourcemap').transfer,
-    convert = require('convert-source-map'),
     fs = require('fs'),
     zlib = require('zlib');
 
